@@ -28,6 +28,7 @@ This one is a rigid tube, sized to the same bag rolls, with an eyelet built for 
 | `poop_tube.py` | The model ([build123d](https://github.com/gumyr/build123d)). Every dimension is a named constant at the top. Running it rebuilds everything and runs a fit check. |
 | `body.stl` | Body, in print orientation (bottom down). |
 | `lid.stl` | Lid, in print orientation (plug end down). |
+| `plate.stl` | Body and lid side by side in one file, to print together. |
 | `assembly.step` | Both parts assembled and locked, for checking fit in CAD. |
 | `render.py` | Regenerates `images/` with [f3d](https://f3d.app) (`apt install f3d`). |
 

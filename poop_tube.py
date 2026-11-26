@@ -175,6 +175,8 @@ locked = placed(lid, -TURN, lid_locked_z)
 
 export_stl(body, str(OUT / "body.stl"))
 export_stl(Pos(0, 0, PLUG_LENGTH) * lid, str(OUT / "lid.stl"))   # plug end on the bed
+# Both on one plate, 10 mm apart, to print together
+export_stl(Compound([body, Pos(2 * body_r + 10, 0, PLUG_LENGTH) * lid]), str(OUT / "plate.stl"))
 export_step(Compound([body, locked]), str(OUT / "assembly.step"))
 
 print(f"body: OD {2 * body_r:.2f}  height {body_height:.1f}  volume {body.volume / 1000:.1f} cm3")
