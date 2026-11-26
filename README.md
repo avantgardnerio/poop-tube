@@ -6,6 +6,10 @@ big, strong eyelet that takes a real carabiner. It prints in two parts with no s
 Designed to hang from a leash on a
 [DMM XSRE Mini carabiner](https://madrock.com/products/dmm-xsre-mini-carabiner) (6.16 mm wire).
 
+| Assembled | Lid | Bayonet groove (inside the rim) |
+|---|---|---|
+| ![assembled](images/assembled.png) | ![lid](images/lid.png) | ![groove](images/grooves.png) |
+
 ## Motivation
 
 Every bag holder I've tried fails in one of these ways:
@@ -25,6 +29,7 @@ This one is a rigid tube, sized to the same bag rolls, with an eyelet built for 
 | `body.stl` | Body, in print orientation (bottom down). |
 | `lid.stl` | Lid, in print orientation (plug end down). |
 | `assembly.step` | Both parts assembled and locked, for checking fit in CAD. |
+| `render.py` | Regenerates `images/` with [f3d](https://f3d.app) (`apt install f3d`). |
 
 ```
 python poop_tube.py
